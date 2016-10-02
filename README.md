@@ -1,6 +1,6 @@
 ## Klemis Kitchen
 
-A web application created for Georgia Tech's Klemis Kitchen, hosted[here.](http://klemiskitchen.gatech.edu)
+A web application created for Georgia Tech's Klemis Kitchen, hosted [here.](http://klemiskitchen.gatech.edu)
 
 ## Features
 
