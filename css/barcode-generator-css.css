@@ -1,10 +1,17 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    background-image: url("../images/wov.png");
+    background-repeat: repeat;
 }
 
 strong {
-    font-weight: 700;
+    font-weight: 700 !important;
+}
+
+h1 {
+    letter-spacing: 2px;
 }
 
 header {
@@ -13,4 +20,12 @@ header {
 
 .row {
     padding: 25px;
+}
+
+.checkboxes {
+    letter-spacing: 1px;
+}
+
+.check {
+    padding: 10px;
 }
