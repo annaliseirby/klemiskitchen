@@ -6,9 +6,9 @@ A web application created for Georgia Tech's Klemis Kitchen, hosted [here.](http
 
 Current goals:
 * Provide visitors with information about Klemis and its purpose/history
-* Allow users to get access to the Kitchen and to volunteer/donate to the cause
-* Allow Klemis Kitchen officers to create custom barcodes and track current inventory
-* Create data visualizations of relevant data
+* Allows students to access Klemis Kitchen, volunteer, and donate
+* Allow student organizers to create custom barcodes and track current inventory
+* Create data visualizations of inventory data, including % of old meals, fresh meals, vegetarian meals, etc
 
 ## Contributors
 
