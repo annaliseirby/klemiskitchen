@@ -6,7 +6,7 @@
     <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
 
-    <title>Index Page</title>
+    <title>Scanner Page</title>
 
     <!-- Bootstrap -->
     <link href = "css/bootstrap.css" rel = "stylesheet">
@@ -17,9 +17,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script src = "js/scanBarcode.js"></script>
 
-    <script src = "js/JsBarcode.all.min.js"></script>
-    <script src = "js/generatebarcode.js"></script>
 
 
 </head>
@@ -27,10 +26,13 @@
 <h1>Test Scanner</h1>
 
 <div class = "container">
-    <div class="form-group">
-        <label for="comment">Scanner Input:</label>
-        <textarea class="form-control" rows="5" id="comment"></textarea>
-    </div>
+    <form id = "inputBarcodes">
+        <div class="form-group">
+            <label for="barcodeText">Example textarea</label>
+            <textarea class="form-control" id="barcodeText" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </div>
 
 
