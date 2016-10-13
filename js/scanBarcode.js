@@ -11,18 +11,17 @@ $(document).ready(function () {
             barcodes[i] = item;
         }
         console.log(barcodes);
-        // $.ajax({
-        //     type: 'POST',
-        //     url: 'http://chenjonathan-cornucopia.herokuapp.com/api/recipe',
-        //     data: {
-        //         name: values.recipeName,
-        //         author: values.authorName,
-        //         instructions: values.instructions,
-        //         rating: 0,
-        //         ingredients: values.ingredients,
-        //     },
-        // });
-        // $('#myModal').modal('hide');
-        // return false;
+
+        $.ajax({
+            type: 'POST',
+            url: 'php/barcode.php',
+            data: "1",
+            success : function() {
+                console.log('I worked');
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                alert("some error");
+            }
+        });
     });
 });
