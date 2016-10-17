@@ -1,0 +1,5 @@
+THINGS TO DO BEFORE DEPLOYMENT:
+Delete base.css
+Get rid of logo-gt.png references
+Get rid of gt-logo-footer-retina.png references
+Uncomment links

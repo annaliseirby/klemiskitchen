@@ -12,48 +12,42 @@
       xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 
 <head>
-    <title></title>
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Home Page</title>
+    <!-- Bootstrap -->
+    <link href = "css/bootstrap.css" rel = "stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script>
-$(function(){
-  $("#header").load("header.html");
-  $("#footer").load("footer.html");
-});
-</script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
 
     <section role="main" id="main" class="with-spotlight">
         <div class="row clearfix">
-
             <div id="page-title">
                 <h2 class="title">Home</h2>
             </div>
-
-
             <div class="no-sidebars" id="content">
-
-
                 <div class="region region-content block-count-1 clearfix">
                     <div id="block-system-main" class="block block-system   block-region-weight-1 odd">
-
-
                         <div class="content block-body clearfix">
                             <div id="node-1" class="node node-horizontal-landing-page node-full clearfix" about="/home"
                                  typeof="sioc:Item foaf:Document">
-
-
                                 <span property="dc:title" content="Home" class="rdf-meta element-hidden"></span>
-
                                 <div class="content">
-
-
                                 </div>
                                 <div id="block-nodeblock-18"
                                      class="block block-nodeblock   block-region-weight-1 odd nodeblock-gt-ct-super-block">
-
-
                                     <div class="content block-body clearfix">
                                         <div id="node-18"
                                              class="node node-super-block clearfix sb-skin-blue sb-teaser-true sb-image-left"
@@ -61,8 +55,8 @@ $(function(){
 
                                             <span property="dc:title" content="Home page superblock"
                                                   class="rdf-meta element-hidden"></span>
-                                            <div class="content node-body clearfix ">
 
+                                            <div class="content node-body clearfix ">
                                                 <div class="super-block__image">
                                                     <div class="super-block__image-wrapper">
                                                         <a href="https://docs.google.com/forms/d/1J4_shkc5E5Nu2Y_P057VekuI4BnwmlP0ZpM8b0kTLm8/viewform"><img
@@ -71,7 +65,6 @@ $(function(){
                                                                 width="1004" height="486" alt=""/></a>
                                                     </div>
                                                 </div>
-
 
                                                 <div class="super-block__lower">
                                                     <div class="super-block__teaser">
@@ -97,14 +90,9 @@ $(function(){
 
                             </div>
                         </div>
-
-
                     </div>
-
-
                 </div>
             </div>
-
         </div>
     </section>
 </body>
