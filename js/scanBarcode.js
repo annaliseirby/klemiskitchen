@@ -11,7 +11,6 @@ $(document).ready(function () {
             barcodes[i] = item;
         }
         console.log(barcodes);
-
         $.ajax({
             type: 'POST',
             url: 'php/barcode.php',
