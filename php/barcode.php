@@ -9,19 +9,22 @@
 
     <form action="barcode.php" method = "post">
 
-    <?php
-        require_once('../mysqli_connect.php');
-        $query= "SELECT * FROM MEALS";
+        echo 'test';
+        require_once('../php/mysqli_connect.php');
+        $query= "SELECT * FROM MEAL";
         $response= mysqli_query($dbc, $query);
-        while($row = mysqli_fetch_array($response)) {
-            echo "<option value=\"$row[Date]\"</option>";
-            echo '<tr><td align = left">' .
-            $row['Date'] . '</td><td align = "left">';
-            echo '</tr>';
+        if($response){
+            while($row = mysqli_fetch_array($response)) {
+                echo "<option value=\"$row[Date]\"</option>";
+                echo '<tr><td align = "left">' .
+                $row['Date'] . '</td><td align = "left">';
+                echo '</tr>';
+            }
         } else {
              echo "Couldn't perform query";
              echo mysqli_error($dbc);
         }
 
-    ?>
+
+
 >
