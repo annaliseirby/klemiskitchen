@@ -16,7 +16,7 @@ $(document).ready(function () {
             url: '../php/barcode.php',
             data: "1",
             success : function(data) {
-                console.log(data);
+                console.log('I worked');
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
                 alert("some error");
