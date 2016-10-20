@@ -9,7 +9,6 @@
 
     <form action="barcode.php" method = "post">
 
-        echo 'test';
         require_once('../php/mysqli_connect.php');
         $query= "SELECT * FROM MEAL";
         $response= mysqli_query($dbc, $query);
