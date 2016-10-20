@@ -12,6 +12,8 @@ $(function() {
         if ($('#Option1').is(':checked')) {
             console.log("Checked!");
             barcode += "1";
+        } else {
+            barcode += "0";
         }
 
         JsBarcode("#barcode", barcode, {
