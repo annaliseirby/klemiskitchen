@@ -20,6 +20,57 @@ $(function() {
             lineColor: "#0aa",
         });
 
+        //Enable Save button
+        $("#save").removeAttr("disabled");
+
+    })
+
+});
+
+//PDFs happen
+
+$(function() {
+
+    $("#save").attr('disabled', 'disabled');
+
+    $("#save").click(function () {
+        var canvas = document.getElementById("barcode");
+        var img = canvas.toDataURL("image/png");
+
+        var doc = { content: [
+            { table: {
+                body: [
+                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                ]
+            },
+                layout: {
+                    hLineWidth: function(i, node) { return 0; },
+                    vLineWidth: function(i, node) { return 0; },
+                    paddingLeft: function(i, node) { return 0; },
+                    paddingRight: function(i, node) { return 0; },
+                    paddingTop: function(i, node) { return 0; },
+                    paddingBottom: function(i, node) { return 0; }
+                }
+            },
+        ],
+
+            images: {
+                barcode: canvas.toDataURL("image/png")
+            }
+
+        }
+
+        pdfMake.createPdf(doc).open();
+
     })
 
 });

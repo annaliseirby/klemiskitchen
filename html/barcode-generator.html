@@ -23,6 +23,9 @@
     <!--Our scripts go here-->
     <script src = "../js/JsBarcode.all.min.js"></script>
     <script src = "../js/generatebarcode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+    <script src='../js/pdfmake.min.js'></script>
+    <script src='../js/vfs_fonts.js'></script>
 
 </head>
 <body>
@@ -114,11 +117,12 @@
             </div>
 
             <div class="barcode text-center col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <svg id="barcode"></svg>
+                <canvas id="barcode"></canvas>
             </div>
         </div>
         <div class="submit pull-right">
-            <input class="btn btn-default text-uppercase" id = "submit" type="submit" value="Submit">
+            <input class="btn btn-default text-uppercase" id = "submit" type="submit" value="Generate Barcode">
+            <button type="button" class="btn btn-default text-uppercase" id="save">Save Barcode</button>
         </div>
     </div>
 </content>
