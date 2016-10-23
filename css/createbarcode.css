@@ -1,0 +1,17 @@
+#svg-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+#categories
+{
+    display: flex;
+}
+
+#svg-1
+{
+    margin: 0 auto;
+    display: block;
+}

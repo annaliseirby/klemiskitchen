@@ -2,7 +2,9 @@
  * Created by kevin on 10/13/2016.
  */
 $(document).ready(function () {
-    $('#inputBarcodes').submit(function() {
+    $('#inputBarcodes').on('submit', function(e) {
+        e.preventDefault();
+
         var barcodes = $("#barcodeText").val().split('\n'); //gets input as an array of each line
         for (var i = 0; i < barcodes.length; i++) { //loops through each line
             var date = barcodes[i].substr(0, 5); //isolates the date
@@ -10,7 +12,7 @@ $(document).ready(function () {
             var item = {date: date, data: data};
             barcodes[i] = item;
         }
-        console.log(barcodes);
+        document.getElementById("inputBarcodes").reset();
         $.ajax({
             type: 'POST',
             url: '../php/barcode.php',
@@ -19,8 +21,10 @@ $(document).ready(function () {
                 console.log(data);
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
-                alert("some error");
+                alert('An error has occured! Please try resubmitting.');
+                console.log(errorThrown);
             }
         });
+
     });
 });
