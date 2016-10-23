@@ -258,13 +258,14 @@
                                     </div>
                                 </div>
 
-
                                 <input class="btn btn-block btn-default text-uppercase" id="submit" type="submit"
-                                       value="Submit">
+                                       value="Generate Barcode">
+                                <input class="btn btn-block btn-default text-uppercase" id="save" type="button"
+                                       value="Save Barcode">
                             </div>
                             <!-- /.checkboxes -->
                             <div id="svg-container" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <svg style="margin:auto; display: block;" id="barcode"></svg>
+                                <canvas style="margin:auto; display: block;" id="barcode"></canvas>
                             </div>
                             <!-- /.barcode -->
                         </div>
@@ -298,6 +299,8 @@
 <!--Our scripts go here-->
 <script src="../../js/JsBarcode.all.min.js"></script>
 <script src="../../js/generatebarcode.js"></script>
+<script src="../../js/pdfmake.min.js"></script>
+<script src="../../js/vfs_fonts.js"></script>
 
 </body>
 
