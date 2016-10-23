@@ -7,17 +7,101 @@ $(function() {
 
 
     $("#submit").click(function () {
-        var barcode = "Hello";
+        var barcode = "";
 
-        if ($('#Option1').is(':checked')) {
+        if ($('#Poultry').is(':checked')) {
             console.log("Checked!");
             barcode += "1";
         } else {
             barcode += "0";
         }
 
+        if ($('#Pork').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#Fish').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#Beef').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#Bread').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#Pasta').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#Rice').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#Potato').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#Vegetable').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#Fruit').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#Sandwich').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#SimplyToGo').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+        if ($('#Dessert').is(':checked')) {
+            console.log("Checked!");
+            barcode += "1";
+        } else {
+            barcode += "0";
+        }
+
+
         JsBarcode("#barcode", barcode, {
-            lineColor: "#0aa",
         });
 
         //Enable Save button
