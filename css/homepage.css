@@ -15,11 +15,6 @@ body {
     height: 100%;
 }
 
-.test {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
 .item,
 .active,
 .carousel-inner {
