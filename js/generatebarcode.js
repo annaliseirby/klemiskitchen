@@ -124,25 +124,25 @@ $(function() {
         var doc = { content: [
             { table: {
                 body: [
-                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
-                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
-                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
-                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
-                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
-                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
-                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
-                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
-                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
-                    [ { image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}, {image: 'barcode', width: 173, height: 75}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
                 ]
             },
                 layout: {
                     hLineWidth: function(i, node) { return 0; },
                     vLineWidth: function(i, node) { return 0; },
-                    paddingLeft: function(i, node) { return 0; },
-                    paddingRight: function(i, node) { return 0; },
+                    paddingLeft: function(i, node) { return 3.5; },
+                    paddingRight: function(i, node) { return 3.5; },
                     paddingTop: function(i, node) { return 0; },
-                    paddingBottom: function(i, node) { return 0; }
+                    paddingBottom: function(i, node) { return 2; }
                 }
             },
         ],
