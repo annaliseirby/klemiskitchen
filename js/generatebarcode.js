@@ -119,7 +119,7 @@ $(function() {
 
     $("#save").click(function () {
         var canvas = document.getElementById("barcode");
-        var img = canvas.toDataURL("image/png");
+        var img = canvas.toDataURL("image/jpeg");
 
         var doc = { content: [
             { table: {
@@ -148,7 +148,7 @@ $(function() {
         ],
 
             images: {
-                barcode: canvas.toDataURL("image/png")
+                barcode: img
             }
 
         }
