@@ -124,16 +124,16 @@ $(function() {
         var doc = { content: [
             { table: {
                 body: [
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 190, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
+                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
                 ]
             },
                 layout: {
