@@ -12,11 +12,14 @@ $(document).ready(function () {
             var item = {date: date, data: data};
             barcodes[i] = item;
         }
+
+        console.log(barcodes);
+
         document.getElementById("inputBarcodes").reset();
         $.ajax({
             type: 'POST',
             url: '../php/barcode.php',
-            data: "1",
+            data: barcodes,
             success : function(data) {
                 console.log(data);
             },

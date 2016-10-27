@@ -25,6 +25,11 @@
 .tw-bs body {
   margin: 0;
 }
+
+.tw-bs .outer {
+  padding-bottom: 50px;
+}
+
 .tw-bs article,
 .tw-bs aside,
 .tw-bs details,
@@ -1737,6 +1742,9 @@ fieldset[disabled] .tw-bs .form-control {
 textarea.tw-bs .form-control {
   height: auto;
 }
+ .textfix {
+   height: auto;
+ }
 .tw-bs input[type="search"] {
   -webkit-appearance: none;
 }
