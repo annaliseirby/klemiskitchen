@@ -119,28 +119,31 @@ $(function() {
 
     $("#save").click(function () {
         var canvas = document.getElementById("barcode");
-        var img = canvas.toDataURL("image/jpeg");
+        //var img = canvas.toDataURL("image/jpeg");
 
-        var doc = { content: [
-            { table: {
-                body: [
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                    [ { image: 'barcode', width: 155, height: 70}, {image: 'barcode', width: 192, height: 70}, {image: 'barcode', width: 155, height: 70}],
-                ]
+        var doc = {
+            pageMargins: [10, 40, 10, 40],
+
+            content: [
+                { table: {
+                    body: [
+                        [ { image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}],
+                        [ { image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}],
+                        [ { image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}],
+                        [ { image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}],
+                        [ { image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}],
+                        [ { image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}],
+                        [ { image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}],
+                        [ { image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}],
+                        [ { image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}],
+                        [ { image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}, {image: 'barcode', width: 182, height: 70}],
+                    ]
             },
                 layout: {
                     hLineWidth: function(i, node) { return 0; },
                     vLineWidth: function(i, node) { return 0; },
-                    paddingLeft: function(i, node) { return 3.5; },
-                    paddingRight: function(i, node) { return 3.5; },
+                    paddingLeft: function(i, node) { return 7; },
+                    paddingRight: function(i, node) { return 7; },
                     paddingTop: function(i, node) { return 0; },
                     paddingBottom: function(i, node) { return 2; }
                 }
@@ -148,7 +151,7 @@ $(function() {
         ],
 
             images: {
-                barcode: img
+                barcode: canvas.toDataURL("image/jpeg"),
             }
 
         }
