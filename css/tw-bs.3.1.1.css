@@ -22,12 +22,9 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 .tw-bs body {
   margin: 0;
-}
-
-.tw-bs .outer {
-  padding-bottom: 50px;
 }
 
 .tw-bs article,
