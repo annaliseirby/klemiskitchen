@@ -98,7 +98,7 @@
                         <a href="createbarcode.html"><i class="fa fa-barcode fa-fw"></i> Create Barcode</a>
                     </li>
                     <li>
-                        <a href="scanbarcode.html"><i class="fa fa-cloud fa-fw"></i> Scan/Upload Barcodes</a>
+                        <a href="scanInMeals.html"><i class="fa fa-cloud fa-fw"></i> Scan In Meals</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
@@ -146,27 +146,32 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Scan and Upload Barcodes</h1>
+                <h1 class="page-header">Scan In Barcodes</h1>
             </div>
             <!-- /.col-lg-12 -->
         </div>
         <!-- /.row -->
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <form id="inputBarcodes">
                     <div class="form-group">
                         <p style="font-size: x-large">Scan Here</p>
                         <input class="form-control" id="barcodeText" autofocus />
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Add</button>
-                    <button id = "remove" class="btn btn-primary">Remove</button>
+                    <!--<button type="submit" class="btn btn-primary">Add</button>-->
+                    <!--<button id = "remove" class="btn btn-primary">Remove</button>-->
 
                 </form>
             </div>
-            <!-- /.col-lg-6 -->
+            <!-- /.col-lg-4 -->
 
-            <div class="col-lg-6">
+            <div class="col-lg-4">
+                <button id = "add" class="btn btn-primary btn-block">Add</button>
+                <button id = "remove" class="btn btn-primary btn-block">Remove</button>
+            </div>
+
+            <div class="col-lg-4">
                 <p style="font-size: x-large">Current Items</p>
                 <div class="panel panel-default">
 
@@ -178,7 +183,7 @@
 
                 </div>
             </div>
-            <!-- /.col-lg-6 -->
+            <!-- /.col-lg-4 -->
         </div>
         <!-- /.row -->
 
