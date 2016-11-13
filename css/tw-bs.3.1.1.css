@@ -1739,7 +1739,7 @@ fieldset[disabled] .tw-bs .form-control {
 textarea.tw-bs .form-control {
   height: auto;
 }
- .textfix {
+ #friendComment, #studentComment {
    height: auto;
  }
 .tw-bs input[type="search"] {
