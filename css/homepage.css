@@ -32,12 +32,3 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
-
-.btn-gtbutton {
-     /* background: #EEB211; */ /* this is the yellow from the Klemis logo. Use if font color doesn't change to white*/
-     background: #0D294E; /* this is the blue from the Klemis logo */
-     color: white;
-     font-weight: bold;
-     margin-bottom: 50px;
-     text-align: center;
-}
