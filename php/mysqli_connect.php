@@ -1,7 +1,7 @@
 <?php
 
-DEFINE ('DB_USER', 'drux_s2klemib');
-DEFINE ('DB_PASSWORD', 'IasDPVoQGWBTWRO8');
+DEFINE ('DB_USER', 'klemiss2');
+DEFINE ('DB_PASSWORD', 'klemis2017');
 DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'drux_s2klemi');
 
