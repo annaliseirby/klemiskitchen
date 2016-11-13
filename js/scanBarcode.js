@@ -15,36 +15,32 @@ $(document).ready(function () {
 
     $('#inputBarcodes').on('submit', function(e) {
         e.preventDefault();
+
+        //THIS CURRENTLY MAKES A CALL ON EVERY "ENTER" FIX THIS LATER
         var barcode = $("#barcodeText").val();
         $('#currentItems').append('<li class="list-group-item">' + barcode + '</li>');
 
-
-
-        // var barcodes = $("#barcodeText").val().split('\n'); //gets input as an array of each line
-        // for (var i = 0; i < barcodes.length; i++) { //loops through each line
-        //     var date = barcodes[i].substr(0, 5); //isolates the date
-        //     var data = barcodes[i].substr(6);
-        //     var item = {date: date, data: data};
-        //     barcodes[i] = item;
-        // }
+        var date = barcode.substr(0, 5); //isolates the date
+        var data = barcode.substr(6);
+        var item = {date: date, data: data};
 
         //console.log(barcodes);
 
         //Clears contents of the form
         document.getElementById("inputBarcodes").reset();
 
-        // $.ajax({
-        //     type: 'POST',
-        //     url: '../php/barcode.php',
-        //     data: barcodes,
-        //     success : function(data) {
-        //         console.log(data);
-        //     },
-        //     error: function(XMLHttpRequest, textStatus, errorThrown) {
-        //         alert('An error has occured! Please try resubmitting.');
-        //         console.log(errorThrown);
-        //     }
-        // });
+        $.ajax({
+            type: 'POST',
+            url: '../../php/barcode.php',
+            data: item,
+            success : function(data) {
+                console.log(data);
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                alert('An error has occured! Please try resubmitting.');
+                console.log(errorThrown);
+            }
+        });
 
     });
 });
