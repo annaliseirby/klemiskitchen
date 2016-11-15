@@ -4,7 +4,6 @@
 $(document).ready(function () {
 
     //Array of total meals that we want to send to the database
-    var totalMeals = [];
 
     //Update list on 'enter', aka after every barcode scan
     $('input').keypress(function(event) {
