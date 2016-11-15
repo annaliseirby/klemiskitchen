@@ -11,17 +11,17 @@ $(function () {
     function drawPieChart() {
         var pieData = {
             labels: [
-                "Informational Flaws",
-                "Very Low Risk Flaws",
-                "Low Risk Flaws",
-                "Medium Risk Flaws",
-                "High Risk Flaws",
-                "Very High Risk Flaws"
+                " Poultry",
+                " Pork",
+                " Beef",
+                " Fish",
+                " More than 2 Meats",
+                " No Meat"
             ],
             datasets: [
                 {
                     data: [
-                        100, 50, 50, 50, 25
+                        100, 50, 50, 50, 25, 10
                     ],
                     backgroundColor: [
                         "#8dbd3e",
