@@ -130,7 +130,7 @@
                                     <i class="fa fa-comments fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">126</div>
+                                    <div id = "activeUsers" class="huge"></div>
                                     <div>Active Users</div>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@
                                     <i class="fa fa-tasks fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">88</div>
+                                    <div id = "availableMeals" class="huge"></div>
                                     <div>Available Meals</div>
                                 </div>
                             </div>
@@ -174,8 +174,8 @@
                                     <i class="fa fa-shopping-cart fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">31</div>
-                                    <div>Taken Meals</div>
+                                    <div id = "mealsTaken" class="huge"></div>
+                                    <div>Meals Taken This Week</div>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@
                                     <i class="fa fa-support fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">5</div>
+                                    <div id = "expiredMeals" class="huge"></div>
                                     <div>Expired Meals</div>
                                 </div>
                             </div>
@@ -702,14 +702,10 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../vendor/metisMenu/metisMenu.min.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <!--<script src="../vendor/raphael/raphael.min.js"></script>-->
-    <!--<script src="../vendor/morrisjs/morris.min.js"></script>-->
-    <!--<script src="../data/morris-data.js"></script>-->
-
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
 
+    <script src = "../../js/dashboard.js"></script>
 </body>
 
 </html>

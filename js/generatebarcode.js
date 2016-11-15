@@ -4,10 +4,9 @@
 // Shorthand for $( document ).ready(). This ensures that the JS only runs after page loads
 $(function() {
 
-
-
     $("#submit").click(function () {
-        var barcode = "";
+        var date = new Date().toISOString().substr(0, 10);
+        var barcode = "" + date + "-";
 
         if ($('#Poultry').is(':checked')) {
             console.log("Checked!");

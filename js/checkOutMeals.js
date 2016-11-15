@@ -40,13 +40,14 @@ $(document).ready(function () {
     }
 
     function submitBarcode(barcode) {
-        var date = barcode.substr(0, 5); //isolates the date
-        var data = barcode.substr(6);
+        var date = barcode.substr(0, 10); //isolates the date
+        var data = barcode.substr(11);
         var item = {date: date, data: data};
+        console.log(item);
 
         $.ajax({
             type: 'POST',
-            url: '../../php/barcode.php',
+            url: '../../php/checkout.php',
             data: item,
             success : function(data) {
                 console.log(data);
@@ -90,45 +91,45 @@ $(document).ready(function () {
     function updateList() {
         var barcode = $("#barcodeText").val();
 
-        //Start i at 5 because 0-5 is date. 6-18 are choices.
+        //Start i at 11 because 0-11 is date. 11-23 are choices.
         var mealIngredients = "";
-        if (barcode.charAt(6) === '1') {
+        if (barcode.charAt(11) === '1') {
             mealIngredients += ", Chicken";
         }
-        if (barcode.charAt(7) === '1') {
+        if (barcode.charAt(12) === '1') {
             mealIngredients += ", Pork";
         }
-        if (barcode.charAt(8) === '1') {
+        if (barcode.charAt(13) === '1') {
             mealIngredients += ", Fish";
         }
-        if (barcode.charAt(9) === '1') {
+        if (barcode.charAt(14) === '1') {
             mealIngredients += ", Beef";
         }
-        if (barcode.charAt(10) === '1') {
+        if (barcode.charAt(15) === '1') {
             mealIngredients += ", Bread";
         }
-        if (barcode.charAt(11) === '1') {
+        if (barcode.charAt(16) === '1') {
             mealIngredients += ", Pasta";
         }
-        if (barcode.charAt(12) === '1') {
+        if (barcode.charAt(17) === '1') {
             mealIngredients += ", Rice";
         }
-        if (barcode.charAt(13) === '1') {
+        if (barcode.charAt(18) === '1') {
             mealIngredients += ", Potato";
         }
-        if (barcode.charAt(14) === '1') {
+        if (barcode.charAt(19) === '1') {
             mealIngredients += ", Vegetable";
         }
-        if (barcode.charAt(15) === '1') {
+        if (barcode.charAt(20) === '1') {
             mealIngredients += ", Fruit";
         }
-        if (barcode.charAt(16) === '1') {
+        if (barcode.charAt(21) === '1') {
             mealIngredients += ", Sandwich";
         }
-        if (barcode.charAt(17) === '1') {
+        if (barcode.charAt(22) === '1') {
             mealIngredients += ", SimplyToGo";
         }
-        if (barcode.charAt(18) === '1') {
+        if (barcode.charAt(23) === '1') {
             mealIngredients += ", Dessert";
         }
 
