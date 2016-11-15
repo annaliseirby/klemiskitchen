@@ -1,10 +1,9 @@
-// <!DOCTYPE js>
 
 var width = 960,
     height = 500,
     radius = Math.min(width, height) / 2 - 10;
 
-var data = d3.range(10).map(Math.random).sort(d3.descending);
+var data = d3.range(5).map(Math.random).sort(d3.descending);
 
 var color = d3.scale.category20();
 
