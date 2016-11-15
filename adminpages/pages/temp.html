@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Pie Chart</title>
+<body>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -14,7 +18,7 @@
 
     var pie = d3.layout.pie();
 
-    var svg = d3.select("panel-body").append("svg")
+    var svg = d3.select("morris-area-chart").append("svg")
             .datum(data)
             .attr("width", width)
             .attr("height", height)
