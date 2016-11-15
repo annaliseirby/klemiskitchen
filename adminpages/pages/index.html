@@ -130,8 +130,8 @@
                                     <i class="fa fa-comments fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
-                                    <div>New Comments!</div>
+                                    <div class="huge">126</div>
+                                    <div>Active Users</div>
                                 </div>
                             </div>
                         </div>
@@ -152,8 +152,8 @@
                                     <i class="fa fa-tasks fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>New Tasks!</div>
+                                    <div class="huge">88</div>
+                                    <div>Available Meals</div>
                                 </div>
                             </div>
                         </div>
@@ -174,8 +174,8 @@
                                     <i class="fa fa-shopping-cart fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
-                                    <div>New Orders!</div>
+                                    <div class="huge">31</div>
+                                    <div>Taken Meals</div>
                                 </div>
                             </div>
                         </div>
@@ -196,8 +196,8 @@
                                     <i class="fa fa-support fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
+                                    <div class="huge">5</div>
+                                    <div>Expired Meals</div>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +216,7 @@
                 <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Data Visualization: Meat in Meals
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -224,11 +224,11 @@
                                         <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu pull-right" role="menu">
-                                        <li><a href="#">Action</a>
+                                        <li><a href="#">Show</a>
                                         </li>
-                                        <li><a href="#">Another action</a>
+                                        <li><a href="#">Hide</a>
                                         </li>
-                                        <li><a href="#">Something else here</a>
+                                        <li><a href="#">More Information</a>
                                         </li>
                                         <li class="divider"></li>
                                         <li><a href="#">Separated link</a>
@@ -240,10 +240,10 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div id="morris-area-chart"></div>
+                            <script src="//d3js.org/d3.v3.min.js"></script>
                         </div>
                         <!-- /.panel-body -->
                     </div>
-                    <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
@@ -345,7 +345,7 @@
                         </div>
                         <!-- /.panel-body -->
                     </div>
-                    <!-- /.panel -->
+                     /.panel
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
@@ -459,7 +459,7 @@
                     </div>
                     <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-8 -->
+                 <!--/.col-lg-8-->
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -467,6 +467,41 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
+                            <table class="table">
+                                <thead >
+                                <tr>
+                                    <th>Type of Meal</th>
+                                    <th>Number of Meals</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr id="poultry">
+                                    <td>Poultry</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr id="pork">
+                                    <td>Pork</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr id="beef">
+                                    <td>Beef</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr id="fish">
+                                    <td>Fish</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr id="multi-meat">
+                                    <td>Multi-Meat</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr id="veggie">
+                                    <td>No Meat</td>
+                                    <td>45</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <script src="temp.js"></script>
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-comment fa-fw"></i> New Comment

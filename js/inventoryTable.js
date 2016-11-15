@@ -1,41 +1,87 @@
 /**
  * Created by kevin on 11/14/2016.
  */
-$(function() {
-    $.ajax({
-        type: 'GET',
-        url: '../../php/fullInventory.php',
-        success : function(data) {
-            drawTable(data);
-        },
-        error: function(XMLHttpRequest, textStatus, errorThrown) {
-            alert('An error has occured! Please try resubmitting.');
-            console.log(errorThrown);
-        }
-    });
+$(function () {
 
-    function drawTable(data) {
-        $('#inventoryTable').DataTable( {
-            pageLength : 25,
-            data: data,
-            columns: [
-                { data: "Date" },
-                { data: "Pork" },
-                { data: "Poultry" },
-                { data: "Fish" },
-                { data: "Beef" },
-                { data: "Bread" },
-                { data: "Pasta:" },
-                { data: "Rice" },
-                { data: "Potato" },
-                { data: "Vegetable" },
-                { data: "Fruit" },
-                { data: "Sandwhich" },
-                { data: "SimplyToGo" },
-                { data: "Dessert" },
-                { data: "NumMeals" }
-            ]
-        });
+    function convertString(data) {
+        return data == '0' ? 'No' : 'Yes';
     }
+    
+    $('#inventoryTable').DataTable({
+        "ajax": {
+            "url": "../../php/fullInventory.php",
+            "dataSrc":''
+        },
+        "searching" : false,
+        "columns": [
+            {"data": "Date"},
+            {"data": "Pork",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Poultry",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Fish",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Beef",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Bread",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Pasta",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Rice",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Potato",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Vegetable",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Fruit",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Sandwhich",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "SimplyToGo",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "Dessert",
+                render : function(data) {
+                    return data == '0' ? 'No' : 'Yes';
+                }
+            },
+            {"data": "NumMeals"}
+        ]
+    });
 
 });

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scan Barcodes</title>
+    <title>Scan In</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../../css/bootstrap.css" rel="stylesheet">
@@ -97,7 +97,8 @@
                         <a href="scanInMeals.html"><i class="fa fa-cloud fa-fw"></i> Scan In Meals (Officers) </a>
                     </li>
                     <li>
-                        <a href="checkOutMeals.html"><i class="fa fa-cart-plus fa-fw"></i> Check Out Meals (Students)</a>
+                        <a href="checkOutMeals.html"><i class="fa fa-cart-plus fa-fw"></i> Check Out Meals
+                            (Students)</a>
                     </li>
                     <li>
                         <a href="../../index.html"><i class="fa fa-home fa-fw"></i> Return to Klemis</a>
@@ -111,47 +112,96 @@
     </nav>
 
     <div id="page-wrapper">
+
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Scan In Barcodes</h1>
+                <h1 class="page-header">Scan In Meals</h1>
             </div>
             <!-- /.col-lg-12 -->
         </div>
-        <!-- /.row -->
-        <div class="row">
-            <div class="col-lg-4">
+        <div class=row>
+
+            <div class="col-lg-6">
                 <form id="inputBarcodes">
                     <div class="form-group">
                         <p style="font-size: x-large">Scan Here</p>
-                        <input class="form-control" id="barcodeText" autofocus />
+                        <input class="form-control" id="barcodeText" autofocus/>
                     </div>
 
                     <!--<button type="submit" class="btn btn-primary">Add</button>-->
                     <!--<button id = "remove" class="btn btn-primary">Remove</button>-->
-
                 </form>
-            </div>
-            <!-- /.col-lg-4 -->
-
-            <div class="col-lg-4">
-                <button id = "submit" class="btn btn-primary btn-block">Add</button>
-                <button id = "remove" class="btn btn-primary btn-block">Remove</button>
-            </div>
-
-            <div class="col-lg-4">
-                <p style="font-size: x-large">Current Items</p>
+                <p id = currentCounter style="font-size: x-large">Current Items: 0</p>
                 <div class="panel panel-default">
-
+                    <!--<div class = panel-heading> Current Items </div>-->
                     <div class="panel-body">
                         <ul class="list-group" id="currentItems">
                             <!--Javascript Will Populate This-->
                         </ul>
                     </div>
-
                 </div>
+
+                <button id="remove" class="btn btn-danger pull-right">Remove</button>
             </div>
-            <!-- /.col-lg-4 -->
+
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <b style="font-size: x-large">Instructions</b>
+                        <p style="font-size: large;">
+                            <br>
+                            1. Click inside the <b> Scan Here </b> box.
+                            <br>
+                            2. Use barcode scanner to scan the item you would like to enter in the database. When you
+                            do, the name of the item
+                            should appear in the <b> Current Items </b> box.
+                            <br>
+                            3. If you would like to remove an item, click on the item inside the <b> Current Item </b>
+                            box and click the <b> Remove </b> button.
+                            <br>
+                            4. When you are done adding and removing items, click the <b> Submit </b> button below to submit
+                            the items to the database.
+                        </p>
+                    </div>
+                </div>
+
+                <button id="submit" class="btn btn-primary btn-lg btn-block">Enter Meals into Database</button>
+            </div>
         </div>
+        <br>
+        <!-- /.row -->
+        <!--<div class="row">-->
+        <!--<div class="col-lg-6">-->
+        <!--<form id="inputBarcodes">-->
+        <!--<div class="form-group">-->
+        <!--<p style="font-size: x-large">Scan Here</p>-->
+        <!--<input class="form-control" id="barcodeText" autofocus/>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;<button type="submit" class="btn btn-primary">Add</button>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button id = "remove" class="btn btn-primary">Remove</button>&ndash;&gt;-->
+
+        <!--</form>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+
+        <!--&lt;!&ndash;<div class="col-lg-4">&ndash;&gt;-->
+        <!--&lt;!&ndash;<button id="submit" class="btn btn-primary btn-block">Submit</button>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+        <!--<div class="col-lg-6">-->
+        <!--<p style="font-size: x-large">Current Items</p>-->
+        <!--<div class="panel panel-default">-->
+        <!--<div class="panel-body">-->
+        <!--<ul class="list-group" id="currentItems">-->
+        <!--&lt;!&ndash;Javascript Will Populate This&ndash;&gt;-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<button id="remove" class="btn btn-primary btn-block">Remove</button>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+        <!--</div>-->
         <!-- /.row -->
 
     </div>

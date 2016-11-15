@@ -205,6 +205,8 @@
 
     <!--Our Scripts-->
     <script src= "../js/sendEmail.js"></script>
+    <script src = ../js/mobileToggles.js></script>
+
 
     <!--Includes js behaviors for various toggles and switches-->
     <!--<script type="text/javascript"-->
@@ -321,11 +323,13 @@
 
 <div class="tw-bs outer">
     <div class="container">
-        <h1>Request Access to Klemis Kitchen</h1>
+        <h1>How to Request Access to Klemis Kitchen</h1>
 
-        <h3>For a Friend</h3>
-        <p>If you believe someone you know might need access to Klemis Kitchen, you can anonymously refer
-        them. Use the email form below to contact Dr. Hartley and Dean Stein. </p>
+        <h2>For a Friend</h2>
+        <p>If someone you know might need access to Klemis Kitchen, you can anonymously refer
+        them. Use the email form below to contact Dr. Hartley and Dean Stein. Once you click Submit,
+        one of them will begin a private conversation with your friend. Your part in the process
+        will end and your name will not be mentioned.</p>
 
         <form>
             <div class="form-group">
@@ -334,7 +338,7 @@
             </div>
 
             <div class="form-group">
-                <label for="friendComment">Your Message:</label>
+                <label for="friendComment">Your message:</label>
                 <textarea class="form-control textfix" rows="7" type="text" id="friendComment">Dear Dr. Hartley and Dean Stein,
 
 My name is [INSERT NAME] and I believe that my friend, [INSERT FRIEND'S NAME], would benefit from access to Klemis Kitchen.
@@ -346,10 +350,10 @@ Thank you,
             <button id = "friendSubmit" type="submit" class="btn btn-default">Send to Dean Stein and Dr. Hartley</button>
         </form>
 
-        <h3>For Yourself</h3>
+        <h2>For Yourself</h2>
 
         <p>To request access to Klemis Kitchen, simply fill out the email template below and send it
-        to Dean Stein and Dr. Hartley.</p>
+        to Dean Stein and Dr. Hartley. After you click Submit, one of them will contact you with more details.</p>
 
         <form>
             <div class="form-group">
@@ -358,7 +362,7 @@ Thank you,
             </div>
 
             <div class="form-group">
-                <label for="studentComment">Your Message:</label>
+                <label for="studentComment">Your message:</label>
                 <textarea class="form-control textfix" rows="7" type="text" id="studentComment">Dear Dr. Hartley and Dean Stein,
 
 My name is [INSERT NAME] and I would like to request access to Klemis Kitchen.
@@ -367,7 +371,7 @@ Can we please set up a meeting to discuss this?
 Thank you,
 [INSERT NAME]</textarea>
             </div>
-            <button id = "userSubmit" type="submit" class="btn btn-default">Send to Dean of Students and Dr. Hartley</button>
+            <button id = "userSubmit" type="submit" class="btn btn-default">Send to Dean Stein and Dr. Hartley</button>
         </form>
     </div>
 </div>
@@ -430,7 +434,7 @@ Thank you,
 
     <!-- #footer/ -->
     <footer id="footer">
-        <div class="row clearfix">
+        <div class="row clearfix" style = "padding-top: 10px; padding-bottom: 20px;">
             <div id="footer-utility-links">
                 <div role="navigation" aria-label="Site Utility"
                      class="gt-footer-utility-links-wrapper login-link-included"></div>
