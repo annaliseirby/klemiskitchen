@@ -7,7 +7,7 @@ var myArr = d3.range(6).map(Math.random).sort(d3.descending);
 
 var data = d3.range(6).map(Math.random).sort(d3.descending);
 
-var labels = ['Poultry', 'Pork', 'Beef', 'Multi-Meat', 'Veggie', 'Fish'];
+var labels = ['Poultry', 'Pork', 'Beef', 'Fish', 'Multi-Meat', 'Veggie'];
 
 
 //
@@ -28,7 +28,7 @@ for (var i = 0; i < labels.length; i++) {
         console.log(color(i));
         document.getElementById(labels[i].toLowerCase()).style.backgroundColor = color(i);
     } catch (e) {
-        console.log(e)
+        console.log(e);
     }
 
 }
