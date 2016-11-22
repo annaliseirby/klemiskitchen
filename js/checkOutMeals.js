@@ -7,7 +7,6 @@ $(document).ready(function () {
     $('input').keypress(function(event) {
         if (event.which == 13) {
             event.preventDefault();
-            //$("#inputBarcodes").submit();
             var entry = updateList(); //entry is an object with (name, barcode)
             $('#currentItems').append('<li class="list-group-item" barcode = ' + entry.barcode + '>' + entry.name + '</li>');
             updateCounter();
@@ -58,34 +57,6 @@ $(document).ready(function () {
             }
         });
     }
-
-    // $('#inputBarcodes').on('submit', function(e) {
-    //     e.preventDefault();
-    //
-    //     //THIS CURRENTLY MAKES A CALL ON EVERY "ENTER" FIX THIS LATER
-    //     var barcode = $("#barcodeText").val();
-    //     $('#currentItems').append('<li class="list-group-item">' + barcode + '</li>');
-    //
-    //     var date = barcode.substr(0, 5); //isolates the date
-    //     var data = barcode.substr(6);
-    //     var item = {date: date, data: data};
-    //
-    //     //console.log(barcodes);
-    //
-    //     $.ajax({
-    //         type: 'POST',
-    //         url: '../../php/barcode.php',
-    //         data: item,
-    //         success : function(data) {
-    //             console.log(data);
-    //         },
-    //         error: function(XMLHttpRequest, textStatus, errorThrown) {
-    //             alert('An error has occured! Please try resubmitting.');
-    //             console.log(errorThrown);
-    //         }
-    //     });
-    //
-    // });
 
     //RETURNS AN OBJECT -> (STRING, BARCODE)
     function updateList() {
