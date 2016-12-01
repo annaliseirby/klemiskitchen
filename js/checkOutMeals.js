@@ -50,10 +50,6 @@ $(document).ready(function () {
             data: item,
             success : function(data) {
                 console.log(data);
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                alert('An error has occured! Please try resubmitting.');
-                console.log(errorThrown);
             }
         });
     }

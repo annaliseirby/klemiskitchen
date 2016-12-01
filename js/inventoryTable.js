@@ -26,7 +26,7 @@ $(function () {
             createTable(editedData);
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-            alert('An error has occured! Please try resubmitting.');
+            alert('An error has occured! Please try refreshing.');
             console.log(errorThrown);
         }
     });

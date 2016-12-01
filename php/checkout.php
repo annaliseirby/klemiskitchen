@@ -32,7 +32,7 @@ $DB_NAME = 'drux_s2klemi';
 $dbc = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);
 
 //This is supposed to decrement. If it doesn't collide, assume that there was human error during input and ignore
-$sql = "INSERT INTO MEAL VALUES('$date', $poultry, $pork, $fish, $beef, $bread, $pasta,
+$sql = "INSERT INTO MEAL VALUES('$date', $pork, $poultry, $fish, $beef, $bread, $pasta,
               $rice, $potato, $vegetable, $fruit, $sandwhich, $simplytogo, $dessert, 0) ON DUPLICATE KEY UPDATE
               NumMeals = NumMeals - 1";
 $dbc->query($sql);

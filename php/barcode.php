@@ -30,7 +30,7 @@ $DB_PASSWORD = 'klemis2017';
 $DB_HOST = 'localhost';
 $DB_NAME = 'drux_s2klemi';
 $dbc = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);
-$sql = "INSERT INTO MEAL VALUES('$date', $poultry, $pork, $fish, $beef, $bread, $pasta,
+$sql = "INSERT INTO MEAL VALUES('$date', $pork, $poultry, $fish, $beef, $bread, $pasta,
               $rice, $potato, $vegetable, $fruit, $sandwhich, $simplytogo, $dessert, 1) ON DUPLICATE KEY UPDATE
               NumMeals = NumMeals + 1";
 if ($dbc->query($sql) === TRUE) {

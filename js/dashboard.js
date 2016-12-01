@@ -19,10 +19,6 @@ $(function() {
             $("#fishdata").html(jsonData[6] == null ? 0 : jsonData[6] );
             $("#multidata").html(jsonData[7] == null ? 0 : jsonData[7] );
             $("#veggiedata").html(jsonData[8] == null ? 0 : jsonData[8] );
-        },
-        error: function(XMLHttpRequest, textStatus, errorThrown) {
-            alert('An error has occured! Please try resubmitting.');
-            console.log(errorThrown);
         }
     });
 
