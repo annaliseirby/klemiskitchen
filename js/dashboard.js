@@ -12,6 +12,13 @@ $(function() {
             $("#availableMeals").html(jsonData[0] == null ? 0 : jsonData[0] );
             $("#mealsTaken").html(jsonData[1] == null ? 0 : jsonData[1]);
             $("#expiredMeals").html(jsonData[2] == null ? 0 : jsonData[2]);
+            createD3Pie([jsonData[3], jsonData[4], jsonData[5], jsonData[6], jsonData[7], jsonData[8]]);
+            $("#poultrydata").html(jsonData[3] == null ? 0 : jsonData[3]);
+            $("#porkdata").html(jsonData[4] == null ? 0 : jsonData[4] );
+            $("#beefdata").html(jsonData[5] == null ? 0 : jsonData[5] );
+            $("#fishdata").html(jsonData[6] == null ? 0 : jsonData[6] );
+            $("#multidata").html(jsonData[7] == null ? 0 : jsonData[7] );
+            $("#veggiedata").html(jsonData[8] == null ? 0 : jsonData[8] );
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             alert('An error has occured! Please try resubmitting.');
@@ -21,7 +28,7 @@ $(function() {
 
 
     $("#activeUsers").html(120);
-    createD3Pie([1,2,3,4,5,6]);
+
     function createD3Pie(data) {
         var width = document.getElementById("meat-chart").offsetWidth,
             height = 500,
