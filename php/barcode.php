@@ -24,7 +24,6 @@ $fruit = substr($binStr, 9, 1);
 $sandwhich = substr($binStr, 10, 1);
 $simplytogo = substr($binStr, 11, 1);
 $dessert = substr($binStr, 12, 1);
-//$date = "2016-11-15";
 
 $DB_USER = 'klemiss2';
 $DB_PASSWORD = 'klemis2017';
