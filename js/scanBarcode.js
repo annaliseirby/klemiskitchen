@@ -25,13 +25,17 @@ $(document).ready(function () {
     //Array of total meals that we want to send to the database
     //Submit button
     $( "#submit" ).click(function() {
-        $( ".list-group li" ).each(function(index, element) {
-            console.log(element.getAttribute("barcode"));
-            submitBarcode(element.getAttribute("barcode"));
-            element.remove();
-        });
+        if ($("#officerPassword").val() === "klemis2k17") {
+            $( ".list-group li" ).each(function(index, element) {
+                //console.log(element.getAttribute("barcode"));
+                submitBarcode(element.getAttribute("barcode"));
+                element.remove();
+            });
+            updateCounter();
+        } else {
+            alert("Incorrect password!");
+        }
 
-        updateCounter();
     });
 
     function updateCounter() {
@@ -43,14 +47,15 @@ $(document).ready(function () {
         var date = barcode.substr(0, 10); //isolates the date
         var data = barcode.substr(11);
         var item = {date: date, data: data};
-        console.log(item);
+        //console.log(item);
 
         $.ajax({
             type: 'POST',
             url: '../../php/barcode.php',
             data: item,
             success : function(data) {
-                console.log(data);
+                alert("Successfully submitted meals!");
+                //console.log(data);
             }
         });
     }
